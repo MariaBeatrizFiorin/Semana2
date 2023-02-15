@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 2;
+    background: url('./img/flor.webp');
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    margin: auto;
+    margin-top: 9rem;
+    max-width: 25rem;
+    padding: 1rem;
+}
+
+.form-wrap {
+    background: #FF1493;
+    padding: 1rem 1.8rem;
+    border: bisque 0.2rem solid;
+    border-radius: 0.6rem;
+}
+
+.form-wrap h1, .form-wrap p {
+    text-align: center;
+}
+
+.form-wrap h1{
+    font-size: 1.4rem;
+}
+
+.form-wrap .form-group label {
+    display: block;
+    color: bisque;
+}
+
+.form-wrap .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: beige 0.1rem solid;
+    border-radius: 0.2rem;
+}
+
+.form-wrap button {
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background: beige;
+    color: #FF1493;
+    border: beige 0.1rem solid;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.form-wrap button:hover {
+    background: #F0E68C;
+}
+
+.form-wrap .btn{
+    font-size: 1rem;
+    margin-top: 1.4rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #FF1493;
+}
+
+footer a {
+    color: #C71585;
+}
+
+.titulo {
+    font-size: 1.4rem;
+}
+
+.navbar {
+    border: bisque 0.15rem solid;
+    border-radius: 0.3rem;
+    padding: 0 1rem;
+    background-color: #FF1493;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li a{
+    color: white;
+    display: block;
+    padding: 0.5rem 1.7rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.navbar a:hover{
+    color: #F0E68C;
+    background-color: #C71585;
+} 
+
+@media(max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        height: 8.7rem;
+        padding: 1rem;
+        align-items: center;
+    }
+}
+
+@media(max-height: 500px){
+    #container {
+        margin-top: 3rem;
+    }
+    footer {
+        margin-top: 0;
+    }
+}
